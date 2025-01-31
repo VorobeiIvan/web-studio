@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/web-studio/',
-  publicDir: './public/assets',  // якщо ти хочеш, щоб інші статичні файли брались з public
+  base:'/web-studio/',
+  publicDir:'./public/assets',
   server: {
     open: true,
   },
