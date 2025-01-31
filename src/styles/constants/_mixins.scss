@@ -1,0 +1,21 @@
+@use "../constants/variables" as *;
+
+// Міксин для підключення шрифтів
+@mixin font-face($font-name, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url("#{$file-path}.woff2") format("woff2"),
+      url("#{$file-path}.woff") format("woff"),
+      url("#{$file-path}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+// Міксин для перерахування значень шрифтів в rem
+@mixin rem-typography($font-size, $line-height, $letter-spacing) {
+  font-size: $font-size / $base-font-size * 1rem;
+  line-height: $line-height / $base-font-size * 1rem;
+  letter-spacing: $letter-spacing / $base-font-size * 1rem;
+}

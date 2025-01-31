@@ -1,0 +1,13 @@
+@use "../constants/variables" as *;
+@use "../constants/mixins" as *;
+
+.logo {
+  font-family: $second-family;
+  @include rem-typography(18px, 24px, 0.54px);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--navy-blue, #2e2f42);
+}

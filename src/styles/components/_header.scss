@@ -1,0 +1,40 @@
+@use "../constants/mixins" as *;
+@use "../constants/variables" as *;
+
+.header {
+  justify-content: space-between;
+}
+.list {
+  list-style: none;
+  &--header-navigation {
+    gap: 40px;
+
+    color: var(--navy-blue, #2e2f42);
+    font-weight: 500;
+  }
+  &--burger-menu-navigation {
+    flex-direction: column;
+    color: var(--navy-blue, #2e2f42);
+
+    @include rem-typography(36px, 40px, 0.72px);
+    font-weight: 700;
+  }
+  &--contacts {
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 500;
+    @include rem-typography(20px, 24px, 0.4px);
+    @media screen and (min-width: $tablet) {
+      color: var(--SLATE, #434455);
+      @include rem-typography(12px, 14px, 0.48px);
+      font-weight: 400;
+      gap: 12px;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      gap: 40px;
+      color: var(--SLATE, #434455);
+      @include rem-typography(16px, 24px, 0.32px);
+    }
+  }
+}

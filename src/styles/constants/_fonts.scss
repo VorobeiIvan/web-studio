@@ -1,0 +1,8 @@
+@use "mixins" as *;
+
+@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Bold", bold);
+@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Medium", 500);
+@include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Regular", normal);
+
+@include font-face("Raleway", "../assets/fonts/Raleway/Raleway-Bold", bold);
+@include font-face("Raleway", "../assets/fonts/Raleway/Raleway-ExtraBold", 800);
