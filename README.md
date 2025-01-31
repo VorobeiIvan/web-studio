@@ -18,3 +18,9 @@ npm run dev
 налаштував vite.config.js
 
 npm install sass
+
+figma  plagin Inspect Styles
+
+
+https://www.favicon.cc/
+
