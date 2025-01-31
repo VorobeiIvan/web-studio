@@ -1,0 +1,27 @@
+{
+  "name": "web-studio",
+  "description": "Навчальний pet-проєкт на Vite + JavaScript + CSS + HTML + GitHub Pages. Web-Studio (Version 5.0) ",
+  "author": "Ivan Vorobei",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VorobeiIvan/web-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VorobeiIvan/web-studio/issues"
+  },
+  "homepage": "https://vorobeiivan.github.io/web-studio/",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
