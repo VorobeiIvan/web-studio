@@ -1,6 +1,7 @@
 @use "../constants/variables" as *;
 @use "../constants/mixins" as *;
 
+
 .hero-bg {
   position: absolute;
   top: 0;
@@ -12,7 +13,6 @@
   height: 100%;
   z-index: -1;
   max-width: 1440px;
-  min-height: 432px;
 
   @include responsive-bg($bg-mob, $bg-retina-mob);
 

@@ -20,12 +20,6 @@ body {
   );
 }
 
-// img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
-
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -45,6 +39,7 @@ body {
   &--hero {
     text-align: center;
     position: relative;
+    min-height: 432px;
     padding-top: 72px;
     padding-bottom: 72px;
     @media screen and (min-width: $tablet) {
@@ -74,10 +69,6 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  // &:hover,
-  // &:focus {
-  //   background-color: var(--ocean);
-  // }
   transition: $transition;
 }
 
@@ -133,7 +124,7 @@ body {
 }
 
 .title {
-  color: var(-navy-blue, #2e2f42);
+  color: var(--navy-blue, #2e2f42);
   @include rem-typography(36px, 40px, 0.72px);
   font-weight: 700;
   &--hero {
@@ -166,8 +157,12 @@ body {
   }
 }
 
-.text-transform {
-  &--lowercase {
+.medium {
+    font-weight: 500;
+  }
+
+
+.lowercase {
     text-transform: lowercase;
   }
-}
+

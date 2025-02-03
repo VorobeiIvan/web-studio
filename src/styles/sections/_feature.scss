@@ -1,0 +1,48 @@
+@use "../constants/variables" as *;
+
+.list--feature {
+  flex-wrap: wrap;
+  gap: 72px;
+  @media screen and (min-width: $tablet) {
+    align-items: flex-start;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+.list--feature > li {
+  max-width: 288px;
+  flex-direction: column;
+  gap: 8px;
+  @media screen and (min-width: $tablet) {
+    align-items: flex-start;
+    width: 100%;
+    max-width: 356px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 264px;
+  }
+}
+
+.feature-icon {
+  display: none;
+  border-radius: 4px;
+  border: 1px solid var(--light-slate, #8e8f99);
+  background: var(--cloud, #f4f4fd);
+  width: 264px;
+  height: 112px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover, &:focus{
+.feature-icon>.icon{
+    stroke: var(--iris,#4d5ae5);
+}
+  }
+  
+}
+
+
