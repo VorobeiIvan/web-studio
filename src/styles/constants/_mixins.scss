@@ -19,3 +19,19 @@
   line-height: $line-height / $base-font-size * 1rem;
   letter-spacing: $letter-spacing / $base-font-size * 1rem;
 }
+
+// Міксин для фонового зображення
+@mixin responsive-bg($image, $image-retina: null) {
+  background-image: url(#{$image});
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @if $image-retina {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url(#{$image});
+    }
+  }
+
+  @content;
+}

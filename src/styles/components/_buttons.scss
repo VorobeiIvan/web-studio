@@ -1,4 +1,5 @@
 @use "../constants/variables" as *;
+@use "../constants/mixins" as *;
 
 .open-modal-btn {
   @media screen and (min-width: $tablet) {
@@ -10,6 +11,25 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.2) ;
+    transform: scale(1.2);
+  }
+}
+
+.prymary {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--white, #fff);
+  @include rem-typography(16px, 24px, 0.64px);
+  font-weight: 500;
+  &:hover,
+  &:focus {
+    background: var(--ocean, #404bbf);
   }
 }
