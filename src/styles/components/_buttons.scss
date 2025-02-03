@@ -1,0 +1,15 @@
+@use "../constants/variables" as *;
+
+.open-modal-btn {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  .open-modal-icon {
+    stroke: var(--navy-blue, #2e2f42);
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2) ;
+  }
+}

@@ -64,14 +64,18 @@ body {
   }
 }
 
+.list {
+  list-style: none;
+}
+
 .btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  &:hover,
-  &:focus {
-    background-color: var(--ocean);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--ocean);
+  // }
   transition: $transition;
 }
 

@@ -22,3 +22,7 @@ figma plagin Inspect Styles
 https://www.favicon.cc/
 
 https://sass-lang.com/documentation/
+
+webp
+
+https://squoosh.app/
