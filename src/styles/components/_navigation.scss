@@ -6,8 +6,8 @@ nav {
   @media screen and (min-width: $tablet) {
     display: flex;
   }
-&--burger-menu {
-    display: flex;
+ .navigation--burger-menu {
+      display: none;
   }
 }
 .navigation {
