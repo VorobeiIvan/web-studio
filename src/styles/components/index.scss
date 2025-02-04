@@ -1,8 +1,9 @@
-@import "header";
-// @import "footer";
+@use "./header";
+// @import "./footer";
+// @import "./modal-form";
 
-@import "logo";
-@import "navigation";
-@import "contacts";
-@import "buttons";
-@import "social";
+@use "./logo";
+@use "./navigation";
+@use "./contacts";
+@use "./buttons";
+@use "./social";

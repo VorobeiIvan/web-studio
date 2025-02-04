@@ -1,6 +1,5 @@
-@use "../constants/mixins" as *;
 @use "../constants/variables" as *;
-
+@use "../constants/mixins" as *;
 nav {
   display: none;
   @media screen and (min-width: $tablet) {

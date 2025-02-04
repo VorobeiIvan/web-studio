@@ -1,6 +1,5 @@
 @use "../constants/variables" as *;
 @use "../constants/mixins" as *;
-
 .logo {
   font-family: $second-family;
   @include rem-typography(18px, 24px, 0.54px);

@@ -1,6 +1,5 @@
-@forward "variables";
-@use "mixins" as *;
-
+@use "./variables" as *;
+@use "./mixins" as *;
 *,
 *::before,
 *::after {

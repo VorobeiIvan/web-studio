@@ -1,12 +1,10 @@
-@use "../constants/variables" as *;
+@use "./variables" as *;
 
 // Міксин для підключення шрифтів
 @mixin font-face($font-name, $file-path, $weight: normal, $style: normal) {
   @font-face {
     font-family: $font-name;
-    src: url("#{$file-path}.woff2") format("woff2"),
-      url("#{$file-path}.woff") format("woff"),
-      url("#{$file-path}.ttf") format("truetype");
+    src: url("#{$file-path}.ttf") format("truetype");
     font-weight: $weight;
     font-style: $style;
     font-display: swap;

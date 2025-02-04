@@ -1,4 +1,4 @@
-@use "mixins" as *;
+@use "./mixins" as *;
 
 @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Bold", bold);
 @include font-face("Roboto", "../assets/fonts/Roboto/Roboto-Medium", 500);

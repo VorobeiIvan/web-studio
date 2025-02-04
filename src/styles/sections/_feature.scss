@@ -1,4 +1,5 @@
 @use "../constants/variables" as *;
+@use "../constants/mixins" as *;
 
 .list--feature {
   flex-wrap: wrap;

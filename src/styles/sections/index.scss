@@ -1,4 +1,4 @@
-@import "hero";
-@import "feature";
-@import "team";
-@import "portfolio";
+@use "./hero";
+@use "./feature";
+@use "./team";
+@use "./portfolio";
