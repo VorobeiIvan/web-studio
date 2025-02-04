@@ -7,7 +7,7 @@
     <meta name="description" content="Web Studio page" />
     <meta name="keywords" content="Web Studio page portfolio contacts html css javascript sass vite github pages figma web-studio dev-studio web-studio-5.0 "  >
     <title>Web Studio</title>
-    <link rel="stylesheet" href="./src/styles/main.scss" />
+    <link rel="stylesheet" href="./src/main.scss" />
   </head>
 
   <body>
@@ -24,15 +24,15 @@
         <nav>
           <ul class="flex navigation--header list">
             <!-- home -->
-            <li >
+            <li  class="list-item">
               <a class="link active" href="#hero">Studio</a>
             </li>
             <!-- portfolio -->
-            <li >
+            <li class="list-item">
               <a class="link" href="#portfolio">Portfolio</a>
             </li>
              <!-- contacts -->
-             <li>
+             <li class="list-item">
               <a class="link" href="#contacts">Contacts</a>
             </li>
           </ul>
@@ -40,9 +40,9 @@
         <!--#endregion end navigation -->
         <!--#region contacts -->
         <div >
-          <ul class="list contacts flex">
+          <ul class="list list--contacts">
             <!-- email -->
-            <li>
+            <li class="list-item">
               <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <!-- phone -->
@@ -54,7 +54,7 @@
         </div>
         <!--#endregion end contacts -->
         <!--#region mobile menu button -->
-        <button class="open-modal-btn btn flex">
+        <button class="btn--open-modal btn">
           <svg class="open-modal-icon icon" width="24" height="24" >
             <use href="./src/assets/icons/svg-sprite.svg#icon-burger-menu"/>
           </svg>
@@ -67,15 +67,15 @@
         <div class="container">
           <div class="hero-bg"></div>
           <h1 class="title--hero">Effective Solutions <span class="lowercase">for </span> Your Business</h1>
-          <button class="btn prymary" type="button">Order Service</button>
+          <button class="btn btn--prymary" type="button">Order Service</button>
         </div>
       </section>
       <section id="feature" class="section">
         <div class="container">
           <h2 class="visually-hidden">Feature</h2>
-          <ul class="list list--feature flex">
+          <ul class="list list--feature ">
             <!--#region strategy -->
-            <li class="list-item flex">
+            <li class="flex list-item ">
               <div class="feature-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./src/assets/icons/svg-sprite.svg#icon-antenna"/>
@@ -143,9 +143,9 @@
                 <p>Product Designer</p>
         <!--#region socials -->
         <div class="socials">
-          <ul class="list flex">
+          <ul class="list  list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -153,7 +153,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -161,7 +161,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -169,7 +169,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -181,16 +181,16 @@
         <!--#endregion end socials -->
             <!--#endregion end Mark Guerrero -->
             <!--#region Tom Ford -->
-            <li class="list-item">
+            <li class="list-item ">
               <img class="team-img" src="./src/assets/images/tom-ford.webp" alt="Tom Ford" width="264" height="260">
               <div class="team-content">
                 <h3 class="title--secondary">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
         <!--#region socials -->
         <div class="socials">
-          <ul class="list flex">
+          <ul class="list list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -198,7 +198,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -206,7 +206,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -214,7 +214,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -233,9 +233,9 @@
                 <p>Marketing</p>
         <!--#region socials -->
         <div class="socials">
-          <ul class="list flex">
+          <ul class="list list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -243,7 +243,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item" >
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -251,7 +251,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -259,7 +259,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -278,9 +278,9 @@
                 <p >UI Designer</p>
         <!--#region socials -->
         <div class="socials">
-          <ul class="list list--social flex">
+          <ul class="list list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -288,7 +288,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -296,7 +296,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -304,7 +304,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -320,14 +320,13 @@
             
       </section>
       <section id="portfolio" class="section">
-      <div class="container">
-
+      <div class="container flex portfolio">
         <h2 class="portfolio-title">Our Portfolio</h2>
-        <ul class="list flex">
+        <ul class="list flex list--portfolio">
           <!--#region App project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/app-project.jpg" alt="App project" width="360" height="300">
+            <img class="portfolio-img" src="./src/assets/images/banking-app.webp" alt="App project" width="360" height="300">
             <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -348,7 +347,7 @@
           <!--#region Marketing project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/marketing-project.jpg" alt="Marketing project" width="360" height="300">
+              <img class="portfolio-img" src="./src/assets/images/cashless-payment.webp" alt="App project" width="360" height="300">
                         <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -369,7 +368,7 @@
           <!--#region Meditation App project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/graphic-project.jpg" alt="Meditation App project" width="360" height="300">
+              <img class="portfolio-img" src="./src/assets/images/meditation-app.webp" alt="App project" width="360" height="300">
                         <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -390,7 +389,7 @@
           <!--#region Taxi Service project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/taxi-project.jpg" alt="Taxi Service project" width="360" height="300">
+              <img class="portfolio-img" src="./src/assets/images/taxi-service.webp" alt="App project" width="360" height="300">
                         <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -411,7 +410,7 @@
           <!--#region Screen Illustrations project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/screen-project.jpg" alt="Screen Illustrations project" width="360" height="300">
+              <img class="portfolio-img" src="./src/assets/images/screen-illustrations.webp" alt="App project" width="360" height="300">
                         <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -432,7 +431,7 @@
           <!--#region Online Courses project -->
           <li class="list-item">
             <a href="">
-            <img class="portfolio-img" src="./src/assets/images/courses-project.jpg" alt="Online Courses project" width="360" height="300">
+              <img class="portfolio-img" src="./src/assets/images/online-courses.webp" alt="App project" width="360" height="300">
                         <div class="description visually-hidden">
               <h3 class="description-title visually-hidden"> description</h3>
               <ul class="list">
@@ -475,9 +474,9 @@
 <p>social media</p>
         <!--#region socials -->
         <div class="socials">
-          <ul class="list">
+          <ul class="list list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -485,7 +484,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -493,7 +492,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -501,7 +500,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -574,9 +573,9 @@
         <!--#endregion end contacts -->
         <!--#region socials -->
         <div class="socials">
-          <ul class="list">
+          <ul class="list list--socials flex">
             <!-- instagram -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-instagram"/>
@@ -584,7 +583,7 @@
               </a>
             </li>
             <!-- twitter -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-twitter"/>
@@ -592,7 +591,7 @@
               </a>
             </li>
             <!-- facebook -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-facebook"/>
@@ -600,7 +599,7 @@
               </a>
             </li>
             <!-- linkedin -->
-            <li class="list-item">
+            <li class="list-item socials-item">
               <a class="link" href="#" target="_blank" rel="noopener noreferrer">
                 <svg class="icon" width="24" height="24">
                   <use href="./src/assets/icons/sprite.svg#icon-linkedin"/>
@@ -614,6 +613,6 @@
     </div>   
     <!--#endregion end modal burger menu  --> 
 
-    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
