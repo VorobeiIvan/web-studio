@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   base:'/web-studio/',
-  publicDir:'./public/assets',
+  publicDir:'./assets',
   server: {
     open: true,
   },
