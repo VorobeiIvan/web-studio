@@ -190,11 +190,16 @@ body {
   border-radius: 4px;
 
   &--open-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
     @media screen and (min-width: $tablet) {
       display: none;
     }
     .open-modal-icon {
-      stroke: var(--navy-blue, #2e2f42);
+      fill: var(--navy-blue, #2e2f42);
     }
 
     &:hover,
@@ -228,7 +233,7 @@ body {
 
     &:hover,
     &:focus {
-      background: var(--ocean, #404bbf);
+      background: var(--green, #31d0aa);
     }
   }
 }
@@ -331,10 +336,18 @@ body {
   }
   &--footer-socials {
     gap: 16px;
+
+    .socials-item {
+      &:hover,
+      &:focus {
+        background: var(--green, #31d0aa);
+      }
+    }
   }
 }
 
 .link {
+  position: relative;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -534,6 +547,13 @@ nav {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris, #4d5ae5);
+
+  transition: $transition;
+
+  &:hover,
+  &:focus {
+    background-color: var(--ocean, #404bbf);
+  }
 }
 
 // portfolio --------------------------------------------------------
@@ -711,4 +731,18 @@ nav {
 
   @include rem-typography(12px, 24px, 0.48px);
   font-weight: 400;
+}
+
+.active {
+  color: var(--iris, #4d5ae5);
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--iris, #4d5ae5);
+    bottom: -20px;
+    left: 0;
+  }
 }
